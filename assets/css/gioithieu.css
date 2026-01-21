@@ -1,0 +1,121 @@
+.header {
+    padding: 0;
+    background-color: #f8f9fa;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/img/gioithieu.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.header-title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 0px 0px 8px black;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5rem;
+}
+
+.content {
+    color: aliceblue;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.content__classic {
+    width: fit-content;
+    height: fit-content;
+     justify-content: space-around;
+    display: flex;
+    gap: 3rem;
+    padding: 50px;
+    padding-left: 100px;
+}
+
+.content__classic--list {
+    width: 35vw;
+}
+
+.content__classic--list-item {
+    width: 35vw;
+    word-wrap: normal;
+    color: aliceblue;
+}
+
+.content__classic--img {
+    width: 35vw;
+    height: auto;
+
+}
+
+.content__acv {
+    justify-content: space-around;
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    padding: 50px;
+    margin-left: 0;
+    padding-left: 100px;
+}
+
+.content__acv--list {
+    width: 35vw;
+}
+
+.content__acv--list-item {
+    width: 35vw;
+    color: aliceblue;
+}
+
+.content__acv--img-list {
+    width: 25vw;
+}
+
+.content__acv--img {
+    width: 35vw;
+    height: auto;
+}
+
+.content__gv {
+    justify-content: space-around;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    padding: 50px;
+    padding-left: 100px;
+}
+
+.content__gv--title {
+    color: aliceblue;
+    margin-bottom: 1rem;
+}
+
+.content__gv--list {
+    width: 35vw;
+}
+
+.content__gv--list-item {
+    width: 35vw;
+    color: aliceblue;
+}
+
+.content__gv--img-list {
+    width: 35vw;
+}
+
+.content__gv--img-item {
+    width: 35vw;
+    height: auto;
+}

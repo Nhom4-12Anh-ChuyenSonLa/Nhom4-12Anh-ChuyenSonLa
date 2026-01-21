@@ -1,0 +1,172 @@
+.header {
+    padding: 0;
+    background-color: #f8f9fa;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/img/sukien.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.header-title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 0px 0px 8px black;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5rem;
+}
+
+.content {
+    padding: 4rem;
+    color: aliceblue;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: fit-content;
+}
+
+.content__timeline {
+    margin: 4rem;
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.content__timeline--title {
+    font-size: 2rem;
+    font-weight: bold;
+    /* text-align: center; */
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+}
+.content__timeline--description {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    text-align: justify;
+}
+.content__timeline--image-list {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-radius: 12px;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.content__timeline--image-list-item {
+    background-color: aliceblue;
+    /* width: 100%; */
+    height: fit-content;
+    display: block;
+    padding: 1rem;
+    margin: 0 auto;
+    border: black 2px solid;
+}
+.content__timeline--image-list-title {
+    background-color: aliceblue;
+    color:black;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.content__timeline--image {
+    border: black 1px solid;
+    border-radius: none;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+.content__meaning {
+    margin: 4rem;
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.content__meaning--title {
+    font-size: 2rem;
+    font-weight: bold;
+    /* text-align: center; */
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+}
+.content__meaning--description {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    text-align: justify;
+}
+.content__meaning--list {
+    margin-left: 4rem;
+    margin-top: 1rem;
+}
+.content__meaning--list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+.content__meaning--list-text {
+}
+
+.content__meaning--list-item-text {
+    width: 40vw;
+    height: auto;
+}
+
+.content__meaning--list-item-video {
+    width: 40vw;
+    height: 50vh;
+    margin-top: 1rem;
+    border-radius: 12px;
+}
+
+.content__atv {
+    margin: 4rem;
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: column;
+    gap: 2rem;
+}
+.content__atv--title {
+    font-size: 2rem;
+    font-weight: bold;
+    /* text-align: center; */
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+}   
+.content__atv--description {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    text-align: justify;
+}
+
+.content__atv--list {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 1rem;
+    padding-left: 1rem;
+}
+.content__atv--list-item {
+}
