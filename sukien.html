@@ -38,18 +38,15 @@
 
 <body>
     <navbar class="navbar">
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
         <ul class="navbar-list">
-            <li class="navbar-item"><a href="index.html" class="navbar-link">Trang Chủ</a></li>
-            <li class="navbar-item"><a href="gioithieu.html" class="navbar-link">Giới Thiệu</a>
-                <ul class="navbar-slist">
-                    <li class="navbar-sitem"><a href="gioithieu/info.html" class="navbar-slink">Thông Tin Sơ Lược</a>
-                    </li>
-                    <li class="navbar-sitem"><a href="gioithieu/acv.html" class="navbar-slink">Thành Tựu Nổi Bật</a>
-                    </li>
-                    <li class="navbar-sitem"><a href="gioithieu/gv.html" class="navbar-slink">Người Lái Đò Thầm Lặng</a>
-                    </li>
-                </ul>
-            </li>
+            <li class="navbar-item"><a href="index.html" class="navbar-link">Trang chủ</a></li>
+            <li class="navbar-item"><a href="gioithieu.html" class="navbar-link">Giới Thiệu</a></li>
             <li class="navbar-item"><a href="sukien.html" class="navbar-link">Kỷ Niệm 30 Năm</a></li>
             <li class="navbar-item"><a href="thanhvien.html" class="navbar-link">Thành Viên</a></li>
         </ul>
@@ -210,6 +207,16 @@
             <p>&copy; 2026 Nhóm 4 - 12Anh - Trường THPT Chuyên Sơn La. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        const menuToggle = document.getElementById('mobile-menu');
+        const navbarList = document.querySelector('.navbar-list');
+        if (menuToggle) {
+            menuToggle.addEventListener('click', function () {
+                navbarList.classList.toggle('active');
+                this.classList.toggle('is-active');
+            });
+        }
+    </script>
 </body>
 
 </html>

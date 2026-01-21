@@ -51,3 +51,20 @@ main {
     font-style: italic;
     color: #c5c5c5;
 }
+
+@media screen and (max-width: 768px) {
+    .team-container {
+        width: 90%;
+    }
+
+    .team-member {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+
+    .member-info-frame {
+        align-items: center;
+    }
+}

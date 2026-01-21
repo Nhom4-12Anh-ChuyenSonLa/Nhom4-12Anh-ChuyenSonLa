@@ -1,6 +1,6 @@
 iframe {
-  width: unset;
-  height: unset;
+    width: unset;
+    height: unset;
 }
 
 .header {
@@ -15,6 +15,7 @@ iframe {
     background-size: cover;
     background-position: center;
 }
+
 .header-title {
     width: 100%;
     height: 100%;
@@ -53,6 +54,7 @@ li {
     line-height: 1.6rem;
     color: aliceblue;
 }
+
 .index {
     width: 100%;
     height: fit-content;
@@ -81,6 +83,7 @@ li {
     text-decoration: none;
     color: #1A374D;
 }
+
 .index__menu-img-frame {
     width: 35vw;
     height: 20vw;
@@ -89,6 +92,7 @@ li {
     border: #1A374D 4px solid;
     margin-bottom: 0.5rem;
 }
+
 .index__menu-img {
     border: none;
     border-radius: 0px;
@@ -97,6 +101,7 @@ li {
     object-fit: cover;
     transition: transform 0.3s ease;
 }
+
 .index__menu-text {
     margin-top: 0.5rem;
     font-size: 1.1rem;
@@ -106,4 +111,25 @@ li {
 
 i {
     background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+    .header-title {
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .intro-section {
+        margin: 2rem 1rem;
+    }
+
+    .index__menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .index__menu-item {
+        width: 90%;
+    }
 }
