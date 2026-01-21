@@ -11,7 +11,7 @@ iframe {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/assets/img/index.JPG);
+    background-image: url(assets/img/index.JPG);
     background-size: cover;
     background-position: center;
 }
