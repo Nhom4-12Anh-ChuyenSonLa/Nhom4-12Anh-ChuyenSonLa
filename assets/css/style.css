@@ -299,12 +299,12 @@ img {
     }
 
     .menu-toggle.is-active .bar:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
+        transform: rotate(-45deg) translate(-5px, 10px);
     }
     .menu-toggle.is-active .bar:nth-child(2) {
         opacity: 0;
     }
     .menu-toggle.is-active .bar:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
+        transform: rotate(45deg) translate(-5px, -10px);
     }
 }
