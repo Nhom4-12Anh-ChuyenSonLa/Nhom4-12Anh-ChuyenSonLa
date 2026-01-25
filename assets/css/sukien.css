@@ -231,11 +231,11 @@
     }
 
     .flickr-portrate {
-        display: block;
+        display: block !important;
     }
 
     .flickr-landscape {
-        display: none;
+        display: none !important;
     }
 
     .content__meaning--list-item {
