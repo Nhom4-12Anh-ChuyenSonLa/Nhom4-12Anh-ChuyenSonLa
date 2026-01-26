@@ -92,6 +92,7 @@ img {
     animation: topToBottom 0.3s ease-in forwards;
     display: flex;
     flex-direction: column;
+    z-index: 100000;
 }
 
 .navbar-item {
