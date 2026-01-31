@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trắc Nghiệm - Nhóm 4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/tracnghiem.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <navbar class="navbar">
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <ul class="navbar-list">
+            <li class="navbar-item"><a href="index.html" class="navbar-link">Trang chủ</a></li>
+            <li class="navbar-item"><a href="gioithieu.html" class="navbar-link">Giới Thiệu
+                    <ul class="navbar-slist">
+                        <li class="navbar-sitem"><a href="gioithieu/info.html" class="navbar-slink">Thông tin sơ
+                                lược</a></li>
+                        <li class="navbar-sitem"><a href="gioithieu/acv.html" class="navbar-slink">Thành tích</a></li>
+                        <li class="navbar-sitem"><a href="gioithieu/gv.html" class="navbar-slink">Người lái đò thầm
+                                lặng</a></li>
+                    </ul>
+                </a></li>
+            <li class="navbar-item"><a href="sukien.html" class="navbar-link">Kỷ Niệm 30 Năm</a></li>
+            <li class="navbar-item"><a href="thanhvien.html" class="navbar-link">Thành Viên</a></li>
+            <li class="navbar-item"><a href="tracnghiem.html" class="navbar-link active">Trắc Nghiệm</a></li>
+        </ul>
+    </navbar>
+
+    <header class="banner">
+        <div class="banner__overlay">
+            <h1 class="banner__title">TÌM HIỂU VỀ TRƯỜNG THPT CHUYÊN SƠN LA</h1>
+            <p class="banner__desc">Hãy thử tài kiến thức của bạn về ngôi trường thân yêu!</p>
+        </div>
+    </header>
+
+    <main class="quiz">
+        <form id="quiz-form" class="quiz__form">
+
+            <div class="quiz__item" id="q1-block">
+                <h3 class="quiz__question">Câu 1: Trường THPT Chuyên được thành lập năm bao nhiêu?</h3>
+                <div class="quiz__answers">
+                    <label class="quiz__answer-label">
+                        <input type="radio" class="quiz__input" name="q1" value="A">
+                        <span class="quiz__text">A. 1990</span>
+                    </label>
+                    <label class="quiz__answer-label">
+                        <input type="radio" class="quiz__input" name="q1" value="B">
+                        <span class="quiz__text">B. 1989</span>
+                    </label>
+                    <label class="quiz__answer-label">
+                        <input type="radio" class="quiz__input" name="q1" value="C">
+                        <span class="quiz__text">C. 1993</span>
+                    </label>
+                    <label class="quiz__answer-label">
+                        <input type="radio" class="quiz__input" name="q1" value="D">
+                        <span class="quiz__text">D. 1995</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="quiz__item" id="q2-block">
+                <h3 class="quiz__question">Câu 2: Tên của trường THPT Chuyên khi được thành lập là gì?</h3>
+                <div class="quiz__answers">
+                    <label class="quiz__answer-label">
+                        <input type="radio" class="quiz__input" name="q2" value="A">
+                        <span class="quiz__text">A. Trường phổ thông Chuyên</span>
+                    </label>
+                    <label class="quiz__answer-label">
+                        <input type="radio" class="quiz__input" name="q2" value="B">
+                        <span class="quiz__text">B. Trường phổ thông Năng khiếu</span>
+                    </label>
+                    <label class="quiz__answer-label">
+                        <input type="radio" class="quiz__input" name="q2" value="C">
+                        <span class="quiz__text">C. Trường Chuyên Văn - Toán</span>
+                    </label>
+                    <label class="quiz__answer-label">
+                        <input type="radio" class="quiz__input" name="q2" value="D">
+                        <span class="quiz__text">D. Trường cấp 3 Năng khiếu</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="quiz__item" id="q3-block">
+                <h3 class="quiz__question">Câu 3: Hiệu trưởng đầu tiên của trường THPT Chuyên là ai?</h3>
+                <div class="quiz__answers">
+                    <label class="quiz__answer-label">
+                        <input type="radio" class="quiz__input" name="q3" value="A">
+                        <span class="quiz__text">A. Thầy Nguyễn Hữu Chiến</span>
+                    </label>
+                    <label class="quiz__answer-label">
+                        <input type="radio" class="quiz__input" name="q3" value="B">
+                        <span class="quiz__text">B. Thầy Cầm Duy Thịnh</span>
+                    </label>
+                    <label class="quiz__answer-label">
+                        <input type="radio" class="quiz__input" name="q3" value="C">
+                        <span class="quiz__text">C. Thầy Trần Hữu Chiến</span>
+                    </label>
+                    <label class="quiz__answer-label">
+                        <input type="radio" class="quiz__input" name="q3" value="D">
+                        <span class="quiz__text">D. Cô Trần La Giang</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="quiz__item" id="q4-block">
+                <h3 class="quiz__question">Câu 4: Trường THPT Chuyên hiện có bao nhiêu lớp?</h3>
+                <div class="quiz__answers">
+                    <label class="quiz__answer-label">
+                        <input type="radio" class="quiz__input" name="q4" value="A">
+                        <span class="quiz__text">A. 33</span>
+                    </label>
+                    <label class="quiz__answer-label">
+                        <input type="radio" class="quiz__input" name="q4" value="B">
+                        <span class="quiz__text">B. 32</span>
+                    </label>
+                    <label class="quiz__answer-label">
+                        <input type="radio" class="quiz__input" name="q4" value="C">
+                        <span class="quiz__text">C. 34</span>
+                    </label>
+                    <label class="quiz__answer-label">
+                        <input type="radio" class="quiz__input" name="q4" value="D">
+                        <span class="quiz__text">D. 30</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="quiz__item" id="q5-block">
+                <h3 class="quiz__question">Câu 5: Bí thư Đoàn Trường THPT Chuyên hiện nay là ai?</h3>
+                <div class="quiz__answers">
+                    <label class="quiz__answer-label">
+                        <input type="radio" class="quiz__input" name="q5" value="A">
+                        <span class="quiz__text">A. Thầy Nguyễn Quốc Định</span>
+                    </label>
+                    <label class="quiz__answer-label">
+                        <input type="radio" class="quiz__input" name="q5" value="B">
+                        <span class="quiz__text">B. Cô Cà Hoa Ban</span>
+                    </label>
+                    <label class="quiz__answer-label">
+                        <input type="radio" class="quiz__input" name="q5" value="C">
+                        <span class="quiz__text">C. Thầy Ngô Quang Tuấn</span>
+                    </label>
+                    <label class="quiz__answer-label">
+                        <input type="radio" class="quiz__input" name="q5" value="D">
+                        <span class="quiz__text">D. Cô Hoàng Thị Hằng Nga</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="quiz__footer">
+                <button type="button" class="btn btn--primary" onclick="submitQuiz()">Nộp Bài</button>
+                <div id="result-area" class="quiz__result"></div>
+            </div>
+        </form>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column about">
+                <h3>TRƯỜNG THPT CHUYÊN SƠN LA</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Địa chỉ: Km số 08, Đường Lê Duẩn, Tổ 3, Phường Chiềng Sinh,
+                    Thành phố Sơn La</p>
+                <p><i class="fas fa-phone"></i> Điện thoại: 0212 3789 066</p>
+                <p><i class="fas fa-envelope"></i> Email: truongthptchuyensonla@gmail.com</p>
+            </div>
+
+            <div class="footer-column links">
+                <h4>LIÊN KẾT NHANH</h4>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="gioithieu.html">Giới Thiệu</a></li>
+                    <li><a href="sukien.html">Kỷ Niệm 30 Năm</a></li>
+                    <li><a href="thanhvien.html">Thành Viên</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column social">
+                <h4>KẾT NỐI</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/hai.minh.966577"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/itzz.mixmux_/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/dagxnson"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Nhóm 4 - 12Anh - Trường THPT Chuyên Sơn La. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

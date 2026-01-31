@@ -1,9 +1,12 @@
 * {
-    background-color: #1A374D;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1A374D;
 }
 
 span.highlight {
@@ -76,11 +79,13 @@ img {
 .navbar-sitem {
     margin: 0.5rem 0;
 }
+
 .navbar-slink {
     text-decoration: none;
     color: aliceblue;
     font-size: 1rem;
 }
+
 .navbar-slink:hover {
     color: #D4AF37;
     padding-left: 5px;
@@ -108,6 +113,7 @@ img {
     0% {
         transform: scaleY(0);
     }
+
     100% {
         transform: scaleY(1);
     }
@@ -118,10 +124,12 @@ img {
         opacity: 0;
         transform: translateX(-20px);
     }
+
     25% {
         opacity: 0;
         transform: translateX(-20px);
     }
+
     100% {
         opacity: 1;
         transform: translateX(0);
@@ -302,9 +310,11 @@ img {
     .menu-toggle.is-active .bar:nth-child(1) {
         transform: rotate(-45deg) translate(-5px, 10px);
     }
+
     .menu-toggle.is-active .bar:nth-child(2) {
         opacity: 0;
     }
+
     .menu-toggle.is-active .bar:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -10px);
     }
