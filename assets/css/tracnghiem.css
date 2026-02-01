@@ -7,9 +7,6 @@ body {
 .banner {
     padding-top: 10vh;
     height: 40vh;
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4e/THPT_Chuyen_Son_La.jpg');
-    background-size: cover;
-    background-position: center;
     position: relative;
     display: flex;
     justify-content: center;
