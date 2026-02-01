@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    
     const menuToggle = document.getElementById('mobile-menu');
     const navbarList = document.querySelector('.navbar-list');
-
     if (menuToggle && navbarList) {
         menuToggle.addEventListener('click', function() {
             navbarList.classList.toggle('active');
@@ -24,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const answers = { q1: 'D', q2: 'B', q3: 'C', q4: 'A', q5: 'A' };
         let score = 0;
         let total = 5;
-        
+
         const quizItems = document.querySelectorAll('.quiz__item');
         if (quizItems.length === 0) return;
 
@@ -58,4 +56,47 @@ document.addEventListener('DOMContentLoaded', function() {
             resultArea.style.color = (score === total) ? "#4CAF50" : "#D4AF37";
         }
     };
+    
+    const feedbackForm = document.querySelector('.feedback__form');
+    if (feedbackForm) {
+        feedbackForm.addEventListener('submit', async function (e) {
+        });
+    }
+
+    const music = document.getElementById('bg-music');
+    const musicBtn = document.getElementById('music-control');
+
+    if (music && musicBtn) {
+        const isPlaying = localStorage.getItem('musicPlaying') === 'true';
+        const currentTime = localStorage.getItem('musicTime') || 0;
+
+        music.currentTime = currentTime;
+        music.volume = 0.3;
+
+        if (isPlaying) {
+            music.play().catch(() => console.log("Cần click để phát nhạc"));
+            musicBtn.classList.add('music-btn--playing');
+            musicBtn.innerHTML = '<i class="fas fa-pause"></i>';
+        }
+
+        setInterval(() => {
+            if (!music.paused) {
+                localStorage.setItem('musicTime', music.currentTime);
+            }
+        }, 1000);
+
+        musicBtn.addEventListener('click', function() {
+            if (music.paused) {
+                music.play();
+                localStorage.setItem('musicPlaying', 'true');
+                musicBtn.classList.add('music-btn--playing');
+                musicBtn.innerHTML = '<i class="fas fa-pause"></i>';
+            } else {
+                music.pause();
+                localStorage.setItem('musicPlaying', 'false');
+                musicBtn.classList.remove('music-btn--playing');
+                musicBtn.innerHTML = '<i class="fas fa-music"></i>';
+            }
+        });
+    }
 });

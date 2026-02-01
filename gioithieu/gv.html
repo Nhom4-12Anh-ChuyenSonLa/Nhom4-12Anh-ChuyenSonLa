@@ -36,6 +36,13 @@
 </head>
 
 <body>
+    <audio id="bg-music" loop>
+        <source src="assets/music/bg.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="music-control" class="music-btn">
+        <i class="fas fa-music"></i>
+    </div>
     <navbar class="navbar">
         <div class="menu-toggle" id="mobile-menu">
             <span class="bar"></span>
@@ -44,17 +51,17 @@
         </div>
 
         <ul class="navbar-list">
-            <li class="navbar-item"><a href="index.html" class="navbar-link">Trang chủ</a></li>
-            <li class="navbar-item"><a href="gioithieu.html" class="navbar-link">Giới Thiệu
+            <li class="navbar-item"><a href="../index.html" class="navbar-link">Trang chủ</a></li>
+            <li class="navbar-item"><a href="../gioithieu.html" class="navbar-link">Giới Thiệu
                 <ul class="navbar-slist">
-                    <li class="navbar-sitem"><a href="gioithieu/info.html" class="navbar-slink">Thông tin sơ lược</a></li>
-                    <li class="navbar-sitem"><a href="gioithieu/acv.html" class="navbar-slink">Thành tích</a></li>
-                    <li class="navbar-sitem"><a href="gioithieu/gv.html" class="navbar-slink">Người lái đò thầm lặng</a></li>
+                    <li class="navbar-sitem"><a href="info.html" class="navbar-slink">Thông tin sơ lược</a></li>
+                    <li class="navbar-sitem"><a href="acv.html" class="navbar-slink">Thành tích</a></li>
+                    <li class="navbar-sitem"><a href="gv.html" class="navbar-slink">Người lái đò thầm lặng</a></li>
                 </ul>
             </a></li>
-            <li class="navbar-item"><a href="sukien.html" class="navbar-link">Kỷ Niệm 30 Năm</a></li>
-            <li class="navbar-item"><a href="thanhvien.html" class="navbar-link">Thành Viên</a></li>
-            <li class="navbar-item"><a href="tracnghiem.html" class="navbar-link active">Trắc Nghiệm</a></li>
+            <li class="navbar-item"><a href="../sukien.html" class="navbar-link">Kỷ Niệm 30 Năm</a></li>
+            <li class="navbar-item"><a href="../thanhvien.html" class="navbar-link">Thành Viên</a></li>
+            <li class="navbar-item"><a href="../tracnghiem.html" class="navbar-link active">Trắc Nghiệm</a></li>
         </ul>
     </navbar>
     <header class="header">
@@ -110,10 +117,10 @@
             <div class="footer-column links">
                 <h4>LIÊN KẾT NHANH</h4>
                 <ul>
-                    <li><a href="../index.html">Trang chủ</a></li>
-                    <li><a href="../gioithieu.html">Giới Thiệu</a></li>
-                    <li><a href="../sukien.html">Kỷ Niệm 30 Năm</a></li>
-                    <li><a href="../thanhvien.html">Thành Viên</a></li>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="gioithieu.html">Giới Thiệu</a></li>
+                    <li><a href="sukien.html">Kỷ Niệm 30 Năm</a></li>
+                    <li><a href="thanhvien.html">Thành Viên</a></li>
                 </ul>
             </div>
 
@@ -126,7 +133,27 @@
                 </div>
             </div>
         </div>
-
+        <section class="feedback">
+            <div class="feedback__container">
+                <h2 class="feedback__title">Gửi ý kiến cho chúng mình</h2>
+                <form action="https://formspree.io/f/mdadabej" method="POST" class="feedback__form">
+                    <div class="feedback__group">
+                        <label class="feedback__label">Tên của bạn:</label>
+                        <input type="text" name="name" class="feedback__input" placeholder="Nhập tên..." required>
+                    </div>
+                    <div class="feedback__group">
+                        <label class="feedback__label">Email liên hệ:</label>
+                        <input type="email" name="email" class="feedback__input" placeholder="email@gmail.com" required>
+                    </div>
+                    <div class="feedback__group">
+                        <label class="feedback__label">Nội dung góp ý:</label>
+                        <textarea name="message" class="feedback__textarea" rows="5"
+                            placeholder="Viết phản hồi tại đây..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary">Gửi phản hồi</button>
+                </form>
+            </div>
+        </section>
         <div class="footer-bottom">
             <p>&copy; 2026 Nhóm 4 - 12Anh - Trường THPT Chuyên Sơn La. All rights reserved.</p>
         </div>

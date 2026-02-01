@@ -114,31 +114,6 @@ body {
     min-height: 3rem;
 }
 
-.btn {
-    padding: 15px 40px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: transform 0.2s, background-color 0.2s;
-    outline: none;
-}
-
-.btn--primary {
-    background-color: #D4AF37;
-    color: #1A374D;
-}
-
-.btn--primary:hover {
-    background-color: #fff;
-    transform: scale(1.05);
-}
-
-.quiz__text {
-    background-color: none !important;
-}
-
 @media screen and (max-width: 768px) {
     .banner__title {
         font-size: 1.5rem;
