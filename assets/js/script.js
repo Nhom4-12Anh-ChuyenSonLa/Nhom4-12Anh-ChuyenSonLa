@@ -57,11 +57,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
     
-    const feedbackForm = document.querySelector('.feedback__form');
-    if (feedbackForm) {
-        feedbackForm.addEventListener('submit', async function (e) {
-        });
-    }
+    feedbackForm.addEventListener("submit", function(e){
+        const email = document.querySelector("#email").value;
+        if(email === ""){
+            alert("Vui lòng nhập email");
+            e.preventDefault();
+        }
+    });
 
     const music = document.getElementById('bg-music');
     const musicBtn = document.getElementById('music-control');

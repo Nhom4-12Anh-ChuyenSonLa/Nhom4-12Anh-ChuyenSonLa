@@ -3,19 +3,6 @@ iframe {
     height: unset;
 }
 
-.header {
-    padding: 0;
-    background-color: #f8f9fa;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(https://raw.githubusercontent.com/Nhom4-12Anh-ChuyenSonLa/Nhom4-12Anh-ChuyenSonLa/refs/heads/main/assets/img/index.JPG);
-    background-size: cover;
-    background-position: center;
-}
-
 .header-title {
     width: 100%;
     height: 100%;
