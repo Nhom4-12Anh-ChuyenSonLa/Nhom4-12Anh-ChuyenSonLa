@@ -21,6 +21,11 @@ main {
     gap: 2rem;
     font-size: large;
 }
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
 .member-photo-frame {
     border-radius: 50%;
     overflow: hidden;

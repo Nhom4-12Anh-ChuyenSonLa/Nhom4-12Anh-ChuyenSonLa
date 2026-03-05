@@ -57,13 +57,17 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
     
-    feedbackForm.addEventListener("submit", function(e){
-        const email = document.querySelector("#email").value;
-        if(email === ""){
-            alert("Vui lòng nhập email");
-            e.preventDefault();
-        }
-    });
+    const feedbackForm = document.getElementById("feedback-form");
+
+    if (feedbackForm) {
+        feedbackForm.addEventListener("submit", function(e){
+            const email = document.querySelector("#email").value;
+            if(email === ""){
+                alert("Vui lòng nhập email");
+                e.preventDefault();
+            }
+        });
+    }
 
     const music = document.getElementById('bg-music');
     const musicBtn = document.getElementById('music-control');
@@ -101,4 +105,16 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    
+    const elements = document.querySelectorAll(".fade-in");
+
+    window.addEventListener("scroll", () => {
+    elements.forEach(el => {
+        const pos = el.getBoundingClientRect().top;
+        if(pos < window.innerHeight - 100){
+            el.classList.add("visible");
+        }
+    });
+    });
 });
