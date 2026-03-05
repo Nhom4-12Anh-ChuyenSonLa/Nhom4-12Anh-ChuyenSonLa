@@ -134,7 +134,8 @@
     gap: 1rem;
 }
 
-.content__meaning--list-text {}
+.content__meaning--list-text {
+}
 
 .content__meaning--list-item-text {
     width: 100%;
